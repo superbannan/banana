@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fffbcc;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.banana-button {
+  background-color: yellow;
+  border: 2px solid orange;
+}
+
+.upgrade-button {
+  background-color: green;
+  color: white;
+}
+
+.sell-button {
+  background-color: red;
+  color: white;
+}
