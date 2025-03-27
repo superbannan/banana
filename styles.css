@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-game {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.upgrade-board {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.clicker-area {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.clicker-area img {
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.clicker-area img:hover {
+    transform: scale(1.1);
+}
+
+.upgrade-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.skins {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cheat-board {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcccc;
+    padding: 10px;
+    border-radius: 5px;
+}
