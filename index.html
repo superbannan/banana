@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Bucks Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="main-game">
+            <div class="stats">
+                <h1>Liam Bucks: <span id="liamBucks">0</span></h1>
+                <h2>Bucks per click: <span id="bucksPerClick">1</span></h2>
+                <input id="playerName" placeholder="Enter your name" onchange="changeName()">
+            </div>
+            
+            <div class="clicker-area">
+                <img id="clickerImage" src="https://via.placeholder.com/200" alt="Clicker" onclick="clickLiam()">
+            </div>
+
+            <div class="skins">
+                <h3>Skins:</h3>
+                <button onclick="changeSkin('default')">Default</button>
+                <button onclick="changeSkin('star')">Star</button>
+                <button onclick="changeSkin('coin')">Coin</button>
+            </div>
+        </div>
+
+        <div class="upgrade-board">
+            <h2>Upgrades</h2>
+            <div id="upgrades"></div>
+        </div>
+
+        <div id="cheatBoard" class="cheat-board hidden">
+            <h2>Cheats</h2>
+            <button onclick="cheatMoney()">+1000 Bucks</button>
+            <button onclick="cheatUpgrades()">Get All Upgrades</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
